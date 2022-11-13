@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "f04a3052-f65a-4a6b-bd46-9605c82cc7f5",
+		"name": "TP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22989682"
+	},
+	"item": [
+		{
+			"name": "AltaUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Priscila",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "2023",
+							"type": "text"
+						},
+						{
+							"key": "fechaIngreso",
+							"value": "12/11/2020",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "bartender",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/usuarios/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"usuarios",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/app/usuarios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Gonza",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "activo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/usuarios/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"usuarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:666/app/usuarios/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"usuarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/app/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "papas",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/productos/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"productos",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarProducto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "LEMON PIE",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "precio",
+							"value": "250",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/productos/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"productos",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:666/app/productos/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"productos",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarMesas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/app/mesas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"mesas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaMesa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "estado",
+							"value": "Closed",
+							"type": "text"
+						},
+						{
+							"key": "fotoUrl",
+							"value": "zzzz",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/mesas/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"mesas",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarMesa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "cerrada",
+							"type": "text"
+						},
+						{
+							"key": "fotoUrl",
+							"value": "ooooo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/mesas/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"mesas",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarMesa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:666/app/mesas/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"mesas",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaPedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombreCliente",
+							"value": "Daniel222",
+							"type": "text"
+						},
+						{
+							"key": "mesaId",
+							"value": "1122",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "en preparacion3",
+							"type": "text"
+						},
+						{
+							"key": "tiempoPreparacion",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productoId",
+							"value": "777777",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "perfil",
+							"value": "888888",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "empleadoId",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productos",
+							"value": "[{\"producto\":\"pizza\"},{\"producto\":\"vino\"},{\"producto\":\"cerveza\"}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/pedidos/agregar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"pedidos",
+						"agregar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:666/app/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarPedido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "999999999",
+							"type": "text"
+						},
+						{
+							"key": "tiempoPreparacion",
+							"value": "555",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "empleadoId",
+							"value": "777",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:666/app/pedidos/29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"pedidos",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrarPedido",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:666/app/pedidos/29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"app",
+						"pedidos",
+						"29"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
